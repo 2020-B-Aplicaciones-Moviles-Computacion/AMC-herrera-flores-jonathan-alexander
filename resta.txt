@@ -1,1 +1,2 @@
-resta
+pepito
+implementar resta de negativos
