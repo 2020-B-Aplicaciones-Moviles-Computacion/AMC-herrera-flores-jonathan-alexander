@@ -20,7 +20,6 @@ fun cargarRepartos(
         archivoRepartos = File("repartos.csv")
         frRepartos = FileReader(archivoRepartos)
         brRepartos = BufferedReader(frRepartos)
-
         var linea: String?
         while (brRepartos.readLine().also { linea = it } != null) {
             var lineaAux = 0
@@ -99,7 +98,7 @@ fun cargarRepartos(
 fun registrarRepartos(
     serie: Serie,
     listaActores: ArrayList<Actor>
-): Reparto {
+): ArrayList<Reparto> {
     var comentario: String
     val comentarioIngreso: String
     try {
@@ -111,13 +110,18 @@ fun registrarRepartos(
     } catch (e: NumberFormatException) {
         comentario = ""
     }
-
-    return Reparto(
-        serie,
-        listaActores[(Math.random() * (listaActores.size)).toInt()],
-        Date(),
-        comentario
-    )
+    val listaReparto = ArrayList<Reparto>()
+    listaActores.forEach{actor->
+        listaReparto.add(
+            Reparto(
+                serie,
+                actor,
+                Date(),
+                comentario
+            )
+        )
+    }
+    return listaReparto
 }
 
 fun guardarRepartos(

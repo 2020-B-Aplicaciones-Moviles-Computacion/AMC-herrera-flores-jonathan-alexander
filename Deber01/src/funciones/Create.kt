@@ -92,7 +92,7 @@ fun opcionC3(
                 }
             }
             if (serieID != null) {
-                listaReparto.add(registrarRepartos(serieID, listaActoresAux))
+                listaReparto.addAll(registrarRepartos(serieID, listaActoresAux))
                 imprimirExito(0)
             } else {
                 imprimirError(2)
