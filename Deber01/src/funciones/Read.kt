@@ -18,7 +18,7 @@ fun leer(
         "¿Qué desea ver?: " +
                 "\n1- Series" +
                 "\n2- Actores" +
-                "\n3- entidades.Reparto por entidades.Serie"
+                "\n3- Reparto por Serie"
     )
     try {
 

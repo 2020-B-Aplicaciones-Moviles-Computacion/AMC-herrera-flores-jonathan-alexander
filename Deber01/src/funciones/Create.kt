@@ -22,7 +22,7 @@ fun crear(
         "Desea Ingresar: " +
                 "\n1- Series" +
                 "\n2- Actores" +
-                "\n3- entidades.Reparto"
+                "\n3- Reparto"
     )
     try {
         when (readLine()?.toInt() as Int) {
