@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Adroid-02</string>
+    <string name="message">HOLA AMIGOS!</string>
+
+    <string-array name="string_array_opciones_dialogo">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>
