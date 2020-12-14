@@ -3,10 +3,14 @@ package com.example.adroid_02
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Parcelable
 import android.util.Log
 import android.widget.Button
 
+
+
 class MainActivity : AppCompatActivity() {
+    val CODIGO_ACTUALIZAR_DATOS = 102
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -22,31 +26,61 @@ class MainActivity : AppCompatActivity() {
 
         val buttonIntentExplicitoParametros = findViewById<Button>(R.id.button_ir_intent_explicito_con_parametros)
         buttonIntentExplicitoParametros.setOnClickListener{
+
+            val liga = DLiga("Kanto","Pokemon")
+            val entrenador = BEntrenador(
+                "Ash",
+                "pueblo paleta",
+                liga
+            )
+
+
             val parametros = arrayListOf<Pair<String,*>>(
                 Pair("nombre","Jonathan"),
                 Pair("apellido","Herrera"),
-                Pair("edad",26)
+                Pair("edad",26),
+                Pair("ash",entrenador)
             )
-            irActividad(CIntentExplicitoParametros::class.java,parametros)
+            irActividad(CIntentExplicitoParametros::class.java,parametros,CODIGO_ACTUALIZAR_DATOS)
         }
     }
 
     fun irActividad(
         clase: Class<*>,
-        parametros:ArrayList<Pair<String,*>>? = null
+        parametros:ArrayList<Pair<String,*>>? = null,
+        codigo: Int? = null
     ){
         val intentExplicito = Intent(
             this,
             clase
         )
-        if(parametros!=null){
-            parametros.forEach {
-                var nombreVariable = it.first
-                var valorVariable = if(it.second is Int) it.second as Int else it.second.toString()
-                intentExplicito.putExtra(nombreVariable, valorVariable)
+        parametros?.forEach {
+            var nombreVariable = it.first
+            var valorVariable: Any? = it.second
+
+            when (it.second) {
+                is Int -> {
+                    valorVariable as Int
+                    intentExplicito.putExtra(nombreVariable, valorVariable)
+                }
+                is Parcelable -> {
+                    valorVariable as Parcelable
+                    intentExplicito.putExtra(nombreVariable, valorVariable)
+                }
+                else -> {
+                    valorVariable as String
+                    intentExplicito.putExtra(nombreVariable, valorVariable)
+                }
             }
+
+
         }
-        startActivityForResult(intentExplicito,102)
+
+        if(codigo != null){
+            startActivityForResult(intentExplicito,codigo)
+        } else {
+            startActivity(intentExplicito)
+        }
     }
 
     override fun onActivityResult(
@@ -56,7 +90,6 @@ class MainActivity : AppCompatActivity() {
     ){
         super.onActivityResult(requestCode,resultCode,data)
 
-        val CODIGO_ACTUALIZAR_DATOS = 102
         when(requestCode) {
             CODIGO_ACTUALIZAR_DATOS -> {
                 if (resultCode == RESULT_OK){
