@@ -6,7 +6,8 @@ import android.os.Bundle
 import android.os.Parcelable
 import android.util.Log
 import android.widget.Button
-
+import java.util.*
+import kotlin.collections.ArrayList
 
 
 class MainActivity : AppCompatActivity() {
@@ -42,6 +43,35 @@ class MainActivity : AppCompatActivity() {
                 Pair("ash",entrenador)
             )
             irActividad(CIntentExplicitoParametros::class.java,parametros,CODIGO_ACTUALIZAR_DATOS)
+        }
+
+        val buttonIntentParametros = findViewById<Button>(R.id.button_ir_intent_respuesta)
+        buttonIntentParametros.setOnClickListener{
+            irActividad(FIntentConRespuesta::class.java)
+        }
+
+        EBaseDeDatos.TablaUsuario = ESqliteHelperUsuario(this)
+        val usuarioEncontrado = EBaseDeDatos?.TablaUsuario?.consultarUsuarioPorId(1)
+        Log.i("bdd","id:${usuarioEncontrado?.id} Nombre:${usuarioEncontrado?.nombre} " +
+                "Descripcion:${usuarioEncontrado?.descripcion}")
+        if(usuarioEncontrado?.id == 0){
+            val resultado = EBaseDeDatos.TablaUsuario?.crearUsuario("Jonathan","Estudiante")
+            if(resultado != null){
+                if(resultado){
+                    Log.i("bdd","Se creo correctamente")
+                } else {
+                    Log.i("bdd","Hubo errores")
+                }
+            }
+        } else {
+            val resultado = EBaseDeDatos.TablaUsuario?.actualizarUsuario("Jonathan", Date().time.toString(), 1)
+            if (resultado != null){
+                if(resultado){
+                    Log.i("bdd","Se actualizó")
+                } else {
+                    Log.i("bdd", "Errores")
+                }
+            }
         }
     }
 
