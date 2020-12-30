@@ -25,6 +25,17 @@ class MainActivity : AppCompatActivity() {
             irActividad(BListView::class.java)
         }
 
+        val buttonIrRecyclerView = findViewById<Button>(R.id.button_ir_recicled_view)
+        buttonIrRecyclerView.setOnClickListener{
+            irActividad(GReciclerView::class.java)
+        }
+
+        val buttonIrHTTP = findViewById<Button>(R.id.button_ir_http)
+        buttonIrHTTP.setOnClickListener{
+            irActividad(HActividadHTTP::class.java)
+        }
+
+
         val buttonIntentExplicitoParametros = findViewById<Button>(R.id.button_ir_intent_explicito_con_parametros)
         buttonIntentExplicitoParametros.setOnClickListener{
 
