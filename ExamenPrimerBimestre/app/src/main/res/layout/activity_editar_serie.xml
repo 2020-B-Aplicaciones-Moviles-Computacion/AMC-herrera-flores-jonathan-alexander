@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarSerie">
+
+    <TextView
+        android:id="@+id/txtNombreSerie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Nombre Serie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tinModificarNombreSerie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreSerie"
+        tools:layout_editor_absoluteX="195dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tintModificarNombreSerie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tinModificarClasificacionSerie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tinModificarNombreSerie"
+        tools:layout_editor_absoluteX="204dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tintModificarClasificacionSerie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Clasificación" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tinModificarAlAire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tinModificarClasificacionSerie"
+        tools:layout_editor_absoluteX="203dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tintModificarAlAire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Está al aire" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnModificarSerie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text="Modificar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tinModificarAlAire" />
+</androidx.constraintlayout.widget.ConstraintLayout>
