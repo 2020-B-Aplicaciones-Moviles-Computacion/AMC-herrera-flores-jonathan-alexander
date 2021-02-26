@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BFirestore">
+
+    <Button
+        android:id="@+id/btn_restaurante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="308dp"
+        android:text="Restaurante"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="168dp"
+        android:text="Producto"
+        app:layout_constraintBottom_toTopOf="@+id/btn_restaurante"
+        app:layout_constraintEnd_toEndOf="@+id/btn_restaurante"
+        app:layout_constraintStart_toStartOf="@+id/btn_restaurante" />
+
+    <Button
+        android:id="@+id/btn_ordenes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="Ordenes"
+        app:layout_constraintEnd_toEndOf="@+id/btn_restaurante"
+        app:layout_constraintStart_toStartOf="@+id/btn_restaurante"
+        app:layout_constraintTop_toBottomOf="@+id/btn_restaurante" />
+
+    <Button
+        android:id="@+id/btn_verOrdenes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Ver órdenes"
+        app:layout_constraintEnd_toEndOf="@+id/btn_ordenes"
+        app:layout_constraintStart_toStartOf="@+id/btn_ordenes"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ordenes" />
+
+    <Button
+        android:id="@+id/btn_obtenerImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="Obtener Imagen"
+        app:layout_constraintEnd_toEndOf="@+id/btn_producto"
+        app:layout_constraintStart_toStartOf="@+id/btn_producto"
+        app:layout_constraintTop_toBottomOf="@+id/btn_producto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

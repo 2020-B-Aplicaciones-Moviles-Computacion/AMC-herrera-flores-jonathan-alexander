@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EImagenes">
+
+    <ImageView
+        android:id="@+id/img_Foto"
+        android:layout_width="247dp"
+        android:layout_height="388dp"
+        android:layout_marginTop="152dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_imagenCamara"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="@+id/btn_imagenArchivo"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <Button
+        android:id="@+id/btn_imagenCamara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:text="Camara"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_imagenArchivo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintStart_toEndOf="@+id/btn_imagenArchivo"
+        app:layout_constraintTop_toTopOf="@+id/btn_imagenArchivo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_subirImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Subir imagen"
+        app:layout_constraintBottom_toTopOf="@+id/img_Foto"
+        app:layout_constraintEnd_toEndOf="@+id/btn_imagenCamara"
+        app:layout_constraintStart_toStartOf="@+id/btn_imagenArchivo" />
+
+    <Button
+        android:id="@+id/btn_imagenArchivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Archivo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_descargaImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Descargar Imagen"
+        app:layout_constraintEnd_toEndOf="@+id/tv_path"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="@+id/tv_path"
+        app:layout_constraintTop_toBottomOf="@+id/tv_path" />
+
+    <EditText
+        android:id="@+id/tv_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/img_Foto"
+        app:layout_constraintStart_toStartOf="@+id/img_Foto"
+        app:layout_constraintTop_toBottomOf="@+id/img_Foto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
