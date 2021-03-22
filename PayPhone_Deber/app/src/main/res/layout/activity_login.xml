@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFAE15"
+    app:layout_constraintCircleRadius="50dp"
+    tools:context=".Login">
+
+    <androidx.constraintlayout.utils.widget.MockView
+        android:id="@+id/mockView2"
+        android:layout_width="333dp"
+        android:layout_height="555dp"
+        android:layout_marginBottom="40dp"
+        android:foreground="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="500dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_registrar"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="22dp"
+        android:text="Quiero Registrarme"
+        app:backgroundTint="#FF8D11"
+        app:layout_constraintBottom_toBottomOf="@+id/mockView2"
+        app:layout_constraintEnd_toEndOf="@+id/mockView2" />
+
+    <TextView
+        android:id="@+id/tv_olvidaContr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="376dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:clickable="true"
+        android:text="¿Olvidaste tu contraseña?"
+        android:textColor="#FFA748"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/mockView2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/mockView2"
+        app:layout_constraintTop_toTopOf="@+id/mockView2" />
+
+    <androidx.constraintlayout.utils.widget.MockView
+        android:id="@+id/mockView"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:foreground="#FF8D11"
+        app:layout_constraintBottom_toBottomOf="@+id/circularImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/circularImageView"
+        android:layout_width="91dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="104dp"
+        android:src="@drawable/logo"
+        app:civ_border_color="#3f51b5"
+        app:civ_border_width="0dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#000000"
+        app:civ_shadow_radius="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:background="#FF8D11"
+        android:text="Version 3.3.10 (235)"
+        android:textColor="#FFF7EE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:text="Ingresa código de país y número de teléfono"
+        android:textColor="#FFA748"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/mockView2"
+        app:layout_constraintStart_toStartOf="@+id/mockView2"
+        app:layout_constraintTop_toTopOf="@+id/mockView2" />
+
+    <EditText
+        android:id="@+id/txt_codPais"
+        android:layout_width="92dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="397dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="+593"
+        app:layout_constraintBottom_toBottomOf="@+id/mockView2"
+        app:layout_constraintEnd_toStartOf="@+id/txt_phone"
+        app:layout_constraintTop_toTopOf="@+id/mockView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/txt_phone"
+        android:layout_width="180dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginLeft="129dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="399dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/mockView2"
+        app:layout_constraintEnd_toEndOf="@+id/mockView2"
+        app:layout_constraintStart_toStartOf="@+id/mockView2" />
+
+    <EditText
+        android:id="@+id/txt_pass"
+        android:layout_width="286dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginBottom="342dp"
+        android:ems="10"
+        android:hint="Ingresa tu contraseña"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFA748"
+        app:layout_constraintBottom_toBottomOf="@+id/mockView2"
+        app:layout_constraintStart_toStartOf="@+id/mockView2" />
+
+    <Button
+        android:id="@+id/btn_iniciar"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="86dp"
+        android:text="Iniciar PayPhone"
+        app:backgroundTint="#FF8D11"
+        app:layout_constraintBottom_toBottomOf="@+id/mockView2"
+        app:layout_constraintEnd_toEndOf="@+id/mockView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

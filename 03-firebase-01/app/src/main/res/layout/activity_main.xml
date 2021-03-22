@@ -71,4 +71,24 @@
         app:layout_constraintStart_toStartOf="@+id/btn_salir"
         app:layout_constraintTop_toBottomOf="@+id/btn_salir" />
 
+    <Button
+        android:id="@+id/btn_irMapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Mapa"
+        app:layout_constraintEnd_toEndOf="@+id/btn_salir"
+        app:layout_constraintStart_toStartOf="@+id/btn_salir"
+        app:layout_constraintTop_toBottomOf="@+id/btn_salir" />
+
+    <Button
+        android:id="@+id/btn_irFragmento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Fragmento"
+        app:layout_constraintBottom_toTopOf="@+id/btn_salir"
+        app:layout_constraintEnd_toEndOf="@+id/btn_salir"
+        app:layout_constraintStart_toStartOf="@+id/btn_salir" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

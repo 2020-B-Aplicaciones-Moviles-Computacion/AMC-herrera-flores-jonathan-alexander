@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFAE15"
+    tools:context=".Contactos">
+
+    <androidx.constraintlayout.utils.widget.MockView
+        android:id="@+id/mockView15"
+        android:layout_width="360dp"
+        android:layout_height="576dp"
+        android:layout_marginTop="48dp"
+        android:foreground="#FFFFFF"
+        app:layout_constraintCircleRadius="500dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.utils.widget.MockView
+        android:id="@+id/mockView11"
+        android:layout_width="412dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="640dp"
+        android:foreground="#FF8D11"
+        app:layout_constraintBottom_toBottomOf="@+id/circularImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.utils.widget.MockView
+        android:id="@+id/mockView14"
+        android:layout_width="0dp"
+        android:layout_height="125dp"
+        android:foreground="#FF8D11"
+        app:layout_constraintBottom_toBottomOf="@+id/circularImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/img_volverContactos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginRight="170dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="@+id/mockView15"
+        app:layout_constraintStart_toStartOf="@+id/mockView15"
+        app:layout_constraintTop_toTopOf="@+id/mockView15"
+        app:srcCompat="@drawable/pointer" />
+
+    <ScrollView
+        android:layout_width="296dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="130dp"
+        app:layout_constraintStart_toStartOf="@+id/mockView15"
+        app:layout_constraintTop_toTopOf="@+id/mockView15">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tb_res"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/icon_contacto" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tr_nombre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Alexander Cabezas"
+                            android:textColor="#000"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tr_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="+593879654169"
+                            android:textColor="#FFA748"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tb_nombres"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/tb_Alexander"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/icon_contacto" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView34"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Alexander Cabezas"
+                            android:textColor="#000"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView35"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="+593879654169"
+                            android:textColor="#FFA748"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tb_Alfredo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/icon_contacto" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView36"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Alfredo Casas"
+                            android:textColor="#000"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView37"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="+593879654169"
+                            android:textColor="#FFA748"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tb_Cesar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/icon_contacto" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView32"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="César Espinoza"
+                            android:textColor="#000"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView33"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="+593879654169"
+                            android:textColor="#FFA748"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tb_Claudio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/icon_contacto" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView40"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Claudio Bastidas"
+                            android:textColor="#000"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView41"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="+593879654169"
+                            android:textColor="#FFA748"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tb_Ernesto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/icon_contacto" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView42"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ernesto Rivera"
+                            android:textColor="#000"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView43"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="+593879654169"
+                            android:textColor="#FFA748"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tb_Gustavo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/icon_contacto" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView44"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Gustavo Fernández"
+                            android:textColor="#000"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView45"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="+593879654169"
+                            android:textColor="#FFA748"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tb_Mario"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/icon_contacto" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView30"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mario Bastidas"
+                            android:textColor="#000"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView31"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="+593879654169"
+                            android:textColor="#FFA748"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tb_Martha"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/icon_contacto" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView26"
+                            android:layout_width="228dp"
+                            android:layout_height="wrap_content"
+                            android:text="Martha Cárdenas"
+                            android:textColor="#000"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView29"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="+593879654169"
+                            android:textColor="#FFA748"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </ScrollView>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/circularImageView6"
+        android:layout_width="91dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logo"
+        app:civ_border_color="#3f51b5"
+        app:civ_border_width="0dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#000000"
+        app:civ_shadow_radius="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_buscarPersona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:background="#FFAE15"
+        android:ems="10"
+        android:hint="Buscar"
+        android:imeOptions="actionSearch"
+        android:inputType="textPersonName"
+        android:textColor="#fff"
+        android:textColorHint="#FFF"
+        app:layout_constraintEnd_toEndOf="@+id/mockView14"
+        app:layout_constraintStart_toStartOf="@+id/mockView14"
+        app:layout_constraintTop_toTopOf="@+id/mockView14" />
+</androidx.constraintlayout.widget.ConstraintLayout>

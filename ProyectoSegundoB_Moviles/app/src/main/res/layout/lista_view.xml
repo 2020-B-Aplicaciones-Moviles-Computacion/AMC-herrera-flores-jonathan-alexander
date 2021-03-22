@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#9CE37D">
+
+    <ImageView
+        android:id="@+id/btn_hideItem"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="#87B37A"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_showItem"
+        app:srcCompat="@drawable/arrow_up" />
+
+    <EditText
+        android:id="@+id/et_avanceItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="How much have you saved?"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_avanceItem"
+        app:layout_constraintTop_toBottomOf="@+id/et_descripcionItem" />
+
+    <EditText
+        android:id="@+id/et_descripcionItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="8dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Describe this entry"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_descripcionItem"
+        app:layout_constraintTop_toBottomOf="@+id/et_razonItem" />
+
+    <EditText
+        android:id="@+id/et_metaItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="8dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Insert the amount you wish to acomplish"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_metaItem"
+        app:layout_constraintTop_toBottomOf="@+id/et_avanceItem" />
+
+    <ImageView
+        android:id="@+id/btn_editItem"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <EditText
+        android:id="@+id/et_razonItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="8dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Optional"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_razonItem"
+        app:layout_constraintTop_toBottomOf="@+id/et_finItem" />
+
+    <EditText
+        android:id="@+id/et_finItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Use the format dd/MM/yyyy"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_finItem"
+        app:layout_constraintTop_toBottomOf="@+id/et_inicioItem" />
+
+    <EditText
+        android:id="@+id/et_inicioItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="8dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Use the format dd/MM/yyyy"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_inicioItem"
+        app:layout_constraintTop_toBottomOf="@+id/et_estadoItem" />
+
+    <EditText
+        android:id="@+id/et_estadoItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="8dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Active or Inactive"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_estadoItem"
+        app:layout_constraintTop_toBottomOf="@+id/et_progresoItem" />
+
+    <EditText
+        android:id="@+id/et_progresoItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="8dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Use only numbers"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_progresoItem"
+        app:layout_constraintTop_toBottomOf="@+id/et_nombreItem" />
+
+    <TextView
+        android:id="@+id/tv_nombreItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/et_nombreItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_nombreItem" />
+
+    <TextView
+        android:id="@+id/tv_progresoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/et_progresoItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_progresoItem" />
+
+    <TextView
+        android:id="@+id/tv_estadoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/et_estadoItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_estadoItem" />
+
+    <TextView
+        android:id="@+id/tv_inicioItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Starting date"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/et_inicioItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_inicioItem" />
+
+    <TextView
+        android:id="@+id/tv_finItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ending date"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/et_finItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_finItem" />
+
+    <TextView
+        android:id="@+id/tv_razonItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reason"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/et_razonItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_razonItem" />
+
+    <EditText
+        android:id="@+id/et_nombreItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="8dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Please enter the item's name"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_nombreItem"
+        app:layout_constraintTop_toBottomOf="@+id/btn_editItem" />
+
+    <Button
+        android:id="@+id/btn_cancelEditItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="8dp"
+        android:text="Cancel"
+        android:visibility="gone"
+        app:backgroundTint="#305685"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_metaItem" />
+
+    <Button
+        android:id="@+id/btn_updateEditItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:text="Update"
+        android:visibility="gone"
+        app:backgroundTint="#305685"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_metaItem" />
+
+    <ImageView
+        android:id="@+id/btn_deleteItem"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <TextView
+        android:id="@+id/tv_avanceItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Achieved"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/et_avanceItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_avanceItem" />
+
+    <TextView
+        android:id="@+id/tv_metaItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/et_metaItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_metaItem" />
+
+    <TextView
+        android:id="@+id/tv_descripcionItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/et_descripcionItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_descripcionItem" />
+
+    <ImageView
+        android:id="@+id/btn_showItem"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:background="#87B37A"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cancelEditItem"
+        app:srcCompat="@drawable/arrow_down" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

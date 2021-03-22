@@ -60,6 +60,18 @@ class MainActivity : AppCompatActivity() {
             .setOnClickListener{
                 irActividad(EImagenes::class.java)
             }
+
+        val btnMapa = findViewById<Button>(R.id.btn_irMapa)
+        btnMapa
+            .setOnClickListener{
+                irActividad(ContenedorMaps::class.java)
+            }
+
+        val btnFragmento = findViewById<Button>(R.id.btn_irFragmento)
+        btnFragmento
+            .setOnClickListener{
+                irActividad(FFragmento::class.java)
+            }
     }
 
     fun irActividad(

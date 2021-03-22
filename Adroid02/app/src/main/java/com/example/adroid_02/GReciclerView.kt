@@ -45,8 +45,7 @@ class GReciclerView : AppCompatActivity() {
     ){
         val adaptador = FReciclerViewAdaptadorNombreCedula(
             lista,
-            actividad,
-            recyclerView
+            actividad
         )
 
         recyclerView.adapter = adaptador

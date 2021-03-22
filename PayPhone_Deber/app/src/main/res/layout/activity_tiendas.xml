@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFAE15"
+    tools:context=".Tiendas">
+
+    <androidx.constraintlayout.utils.widget.MockView
+        android:id="@+id/mockView20"
+        android:layout_width="338dp"
+        android:layout_height="420dp"
+        android:foreground="#FFFFFF"
+        app:layout_constraintCircleRadius="500dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mockView18" />
+
+    <androidx.constraintlayout.utils.widget.MockView
+        android:id="@+id/mockView17"
+        android:layout_width="412dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="640dp"
+        android:foreground="#FF8D11"
+        app:layout_constraintBottom_toBottomOf="@+id/circularImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.utils.widget.MockView
+        android:id="@+id/mockView18"
+        android:layout_width="0dp"
+        android:layout_height="196dp"
+        android:foreground="#FF8D11"
+        app:layout_constraintBottom_toBottomOf="@+id/circularImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/circularImageView9"
+        android:layout_width="91dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="152dp"
+        android:src="@drawable/logo"
+        app:civ_border_color="#3f51b5"
+        app:civ_border_width="0dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#000000"
+        app:civ_shadow_radius="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginRight="147dp"
+        app:layout_constraintEnd_toEndOf="@+id/mockView18"
+        app:layout_constraintTop_toTopOf="@+id/mockView18"
+        app:srcCompat="@drawable/buscar_tienda" />
+
+    <ImageView
+        android:id="@+id/img_nada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mockView20"
+        app:layout_constraintEnd_toEndOf="@+id/mockView20"
+        app:layout_constraintStart_toStartOf="@+id/mockView20"
+        app:srcCompat="@drawable/no_resultados" />
+
+    <ImageView
+        android:id="@+id/img_cancelaBusqueda"
+        android:layout_width="142dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="136dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="@+id/mockView18"
+        app:layout_constraintTop_toTopOf="@+id/mockView18"
+        app:srcCompat="@drawable/cancelar" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="101dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginEnd="276dp"
+        android:layout_marginRight="276dp"
+        android:background="#FFAE15"
+        app:layout_constraintEnd_toEndOf="@+id/mockView18"
+        app:layout_constraintTop_toTopOf="@+id/mockView18">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EC"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COL"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="US"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/et_buscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="97dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:background="#FFAE15"
+        android:ems="10"
+        android:hint="Buscar"
+        android:imeOptions="actionSearch"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFF"
+        app:layout_constraintEnd_toEndOf="@+id/mockView18"
+        app:layout_constraintTop_toTopOf="@+id/mockView18" />
+
+    <ImageView
+        android:id="@+id/img_cercana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="@+id/mockView18"
+        app:layout_constraintTop_toTopOf="@+id/mockView18"
+        app:srcCompat="@drawable/cercanas" />
+
+    <ImageView
+        android:id="@+id/img_volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:layout_marginBottom="11dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/mockView20"
+        app:layout_constraintEnd_toEndOf="@+id/mockView20"
+        app:srcCompat="@drawable/pointer" />
+
+    <ImageView
+        android:id="@+id/img_res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="139dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/mockView20"
+        app:layout_constraintStart_toStartOf="@+id/mockView20"
+        app:layout_constraintTop_toTopOf="@+id/mockView20"
+        app:srcCompat="@drawable/tiendas_res" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

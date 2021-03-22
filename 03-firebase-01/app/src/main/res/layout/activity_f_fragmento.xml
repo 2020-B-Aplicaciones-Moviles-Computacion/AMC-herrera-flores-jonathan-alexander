@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FFragmento">
+
+    <Button
+        android:id="@+id/btn_crearPrimerFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="77dp"
+        android:layout_marginRight="77dp"
+        android:text="Primero"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_crearSegundoFrag"
+        app:layout_constraintEnd_toStartOf="@+id/btn_crearSegundoFrag"
+        app:layout_constraintTop_toTopOf="@+id/btn_crearSegundoFrag" />
+
+    <Button
+        android:id="@+id/btn_crearSegundoFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:text="Segundo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_fragmentos"
+        android:layout_width="278dp"
+        android:layout_height="333dp"
+        android:layout_marginBottom="172dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
